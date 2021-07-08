@@ -1,0 +1,526 @@
+<!DOCTYPE html><html class="hide-aside" lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>HTML开发总结 | 繁星</title><meta name="keywords" content="HTML5,canvas"><meta name="author" content="繁星"><meta name="copyright" content="繁星"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="简介 超文本标记语言 负责网页三个要素中的&#x3D;&#x3D;结构&#x3D;&#x3D; 超文本是指超链接  html 的发展 1993年6月：HTML第一个版本 2014年10月：HTML5  html5 简介 定义HTML标准的最新版本，最新版本的HTML语言，具有心得元素，属性和行为，更大的技术集，允许更多样化和强大的网站和应用程序 &#x3D;&#x3D;HTML 5 约等于 HTML + css + js&#x3D;&#x3D; 优势： 跨平台：浏览器跨平台">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML开发总结">
+<meta property="og:url" content="https://www.fxblog.top/2020/06/10/html%E5%BC%80%E5%8F%91%E6%80%BB%E7%BB%93/index.html">
+<meta property="og:site_name" content="繁星">
+<meta property="og:description" content="简介 超文本标记语言 负责网页三个要素中的&#x3D;&#x3D;结构&#x3D;&#x3D; 超文本是指超链接  html 的发展 1993年6月：HTML第一个版本 2014年10月：HTML5  html5 简介 定义HTML标准的最新版本，最新版本的HTML语言，具有心得元素，属性和行为，更大的技术集，允许更多样化和强大的网站和应用程序 &#x3D;&#x3D;HTML 5 约等于 HTML + css + js&#x3D;&#x3D; 优势： 跨平台：浏览器跨平台">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://www.fxblog.top/img/bg/bg1.jpeg">
+<meta property="article:published_time" content="2020-06-10T08:09:59.000Z">
+<meta property="article:modified_time" content="2021-07-01T15:58:47.459Z">
+<meta property="article:author" content="繁星">
+<meta property="article:tag" content="HTML5">
+<meta property="article:tag" content="canvas">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.fxblog.top/img/bg/bg1.jpeg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://www.fxblog.top/2020/06/10/html%E5%BC%80%E5%8F%91%E6%80%BB%E7%BB%93/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><meta name="google_site_verification"/><meta name="baidu_site_verification"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":40,"languages":{"author":"作者: 繁星","link":"链接: ","source":"来源: 繁星","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"top-center"},
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'HTML开发总结',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-07-01 23:58:47'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const fontSizeVal = saveToLocal.get('global-font-size')
+    if (fontSizeVal !== undefined) {
+      document.documentElement.style.setProperty('--global-font-size', fontSizeVal + 'px')
+    }
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/top.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">6</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/bg/bg1.jpeg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">繁星</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">HTML开发总结</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-06-10T08:09:59.000Z" title="发表于 2020-06-10 16:09:59">2020-06-10</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-07-01T15:58:47.459Z" title="更新于 2021-07-01 23:58:47">2021-07-01</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">5.5k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>19分钟</span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><ul>
+<li>超文本标记语言</li>
+<li>负责网页三个要素中的==结构==</li>
+<li>超文本是指超链接</li>
+</ul>
+<h2 id="html-的发展"><a href="#html-的发展" class="headerlink" title="html 的发展"></a>html 的发展</h2><ul>
+<li>1993年6月：HTML第一个版本</li>
+<li>2014年10月：HTML5</li>
+</ul>
+<h2 id="html5-简介"><a href="#html5-简介" class="headerlink" title="html5 简介"></a>html5 简介</h2><ul>
+<li>定义HTML标准的最新版本，最新版本的HTML语言，具有心得元素，属性和行为，更大的技术集，允许更多样化和强大的网站和应用程序</li>
+<li>==HTML 5 约等于 HTML + css + js==</li>
+<li>优势：<ul>
+<li>跨平台：浏览器跨平台</li>
+<li>快速迭代</li>
+<li>降低成本</li>
+<li>导流入口多</li>
+<li>分发效率高</li>
+</ul>
+</li>
+</ul>
+<h2 id="路径"><a href="#路径" class="headerlink" title="路径"></a>路径</h2><ul>
+<li>相对路径： 相对于当前资源所在目录的位置</li>
+<li>绝对路径：相对于整个资源在硬盘目录上真正的路径</li>
+</ul>
+<h2 id="语法规范"><a href="#语法规范" class="headerlink" title="语法规范"></a>语法规范</h2><ol>
+<li>不区分大小写，一般使用小写</li>
+<li>注释不能嵌套</li>
+<li>标签必须结构完整，成对或者自结束出现</li>
+<li>标签可以嵌套，但是不能交叉嵌套</li>
+<li>属性必须有值，且必须有引号</li>
+</ol>
+<h2 id="html-基本框架"><a href="#html-基本框架" class="headerlink" title="html 基本框架"></a>html 基本框架</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!doctype <span class="meta-keyword">html</span>&gt;</span> --文档声明html5</span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="DOCTYPE和浏览器渲染模式"><a href="#DOCTYPE和浏览器渲染模式" class="headerlink" title="DOCTYPE和浏览器渲染模式"></a>DOCTYPE和浏览器渲染模式</h3><ul>
+<li>DOCTYPE，或者称为 Document Type Declaration（文档类型声明，缩写 DTD）<pre><code>  通常情况下，DOCTYPE 位于一个 HTML 文档的最前面的位置，位于根元素 HTML 的起始标签之前。
+  因为浏览器必须在解析 HTML 文档正文之前就确定当前文档的类型，以决定其需要采用的渲染模式，
+  不同的渲染模式会影响到浏览器对于 CSS 代码甚至 JavaScript 脚本的解析    
+</code></pre>
+</li>
+<li>到目前为止，各浏览器主要包含了三种模式。在 HTML5 草案中，更加明确的规定了模式的定义：<pre><code>         传统名称                                  HTML5 草案名称            document.compatMode 返回值
+  standards mode(strict mode)             no-quirks mode                CSS1Compat
+  almost standards mode                    limited-quirks mode            CSS1Compat
+  quirks mode                                quirks mode                    BackCompat
+</code></pre>
+</li>
+<li>document.compatMode<pre><code>       document.compatMode 属性最初由微软在 IE 中创造出来，这是一个只读的属性，返回一个字符串，
+       只可能存在两种返回值：
+          BackCompat：标准兼容模式未开启（怪异模式）
+          CSS1Compat：标准兼容模式已开启（标准模式）
+</code></pre>
+</li>
+<li>现代主流浏览器中，其实怪异模式的渲染和标准与几乎标准间没有太大的差别（ie9+ 谷歌 火狐 …）<pre><code>  ie5.5之前都是ie自己的渲染模式，怪异模式
+  ie6才开始慢慢支持标准，标准模式，在ie6 中怪异和标准模式的区别最大
+  ie7 8 9都是基于标准模式升级的，他们理论上存在怪异模式
+</code></pre>
+</li>
+<li>TML5提供的<DOCTYPE html>是标准模式，向后兼容的,等同于开启了标准模式，<pre><code>  那么浏览器就得老老实实的按照W3C的 标准解析渲染页面
+  一个不含任何 DOCTYPE 的网页将会以 怪异(quirks) 模式渲染。
+</code></pre>
+</li>
+</ul>
+<h3 id="DTD"><a href="#DTD" class="headerlink" title="DTD"></a>DTD</h3><ul>
+<li><code>&lt;!DOCTYPE html&gt;</code><br>当 doctype 信息如上时，表明该页面是遵守了 HTML5 规范的，浏览器会选择 Standards Mode，这种 doctype 是最推荐的一种，<br>我们平时设计页面都应该加上这一个 doctype。<br>HTML5 不基于 SGML,所以不需要引用 DTD,浏览器内部本身有对标签进行解析渲染验证的模块</li>
+<li><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot; &quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;</code><br>当 doctype 如上时，浏览器同样会选择 Standards Mode，虽然和第一种 doctype 有一些区别，但是几乎可以认为是一样的。</li>
+<li><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;</code><br>当 doctype 如上时，浏览器会选择 Almost Standards Mode，渲染时和标准会有一些区别<br>当 doctype 缺失的时候，浏览器会选择 Quirks Mode，这是非常不推荐的方式，<br>当 doctype上面有注释，标签或者空行时，某些浏览器都会认为该页面不具有doctype。<br>我们应该尽量避免 Quirks Mode，这对一个 web 应用是非常不利的地方。</li>
+<li>每种doctype在浏览器中对应的渲染模式<br><code>https://en.wikipedia.org/wiki/Quirks_mode</code>    </li>
+</ul>
+<h3 id="根元素"><a href="#根元素" class="headerlink" title="根元素"></a>根元素</h3><ul>
+<li>H4中的根元素:<br><code>&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;</code><br>首先这个标记没有任何问题，你喜欢的话,那就背下来继续用。它是有效的。但这个标记中的很多字节在Html5中我们都可以省略了<ul>
+<li>xmlns:这是XHTML1.0的东西:它的意思是在这个页面上的元素都位于<a target="_blank" rel="noopener" href="http://www.w3.org/1999/xhtml%E8%BF%99%E4%B8%AA%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4%E5%86%85,%E4%BD%86%E6%98%AFHTML5%E4%B8%AD%E7%9A%84%E6%AF%8F%E4%B8%AA%E5%85%83%E7%B4%A0%E9%83%BD%E5%85%B7%E6%9C%89%E8%BF%99%E4%B8%AA%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4%EF%BC%8C%E4%B8%8D%E9%9C%80%E8%A6%81%E5%9C%A8%E9%A1%B5%E9%9D%A2%E4%B8%8A%E5%86%8D%E6%98%BE%E7%A4%BA%E6%8C%87%E5%87%BA">http://www.w3.org/1999/xhtml这个命名空间内,但是HTML5中的每个元素都具有这个命名空间，不需要在页面上再显示指出</a></li>
+</ul>
+</li>
+<li>H5中的根元素<br><code>&lt;html&gt;&lt;/html&gt;</code></li>
+</ul>
+<h3 id="head元素"><a href="#head元素" class="headerlink" title="head元素"></a>head元素</h3><ul>
+<li>MIME类型:<blockquote>
+<p>每当浏览器请求一个页面时，web服务器会在发送实际页面内容之前，先发送一些头信息。浏览器需要这些信息来决定如何解析随后的页面内容。最重要的是Content-Type</p>
+</blockquote>
+</li>
+<li>比如: ```Content-Type:text/html``<ul>
+<li>text/html:即这个页面的”内容类型”,或者称为MIME类型。这个头信息将唯一确定某个资源的本质是什么,也决定了它应该如何被呈现。</li>
+</ul>
+</li>
+<li>图片也有自己的MIME类型<br>  jpg:image/jpeg<br>  png:image/png</li>
+<li>js也有自己的MIME类型，css也有自己的MIME类型，任何资源都有自己的MIME类型，整个web都依靠MIME类型来运作</li>
+<li><code>&lt;meta charset=&quot;UTF-8&quot;&gt;</code> 告诉浏览器你应该使用哪种编码来解析网页</li>
+</ul>
+<h2 id="html-标签-元素"><a href="#html-标签-元素" class="headerlink" title="html 标签 (元素)"></a>html 标签 (元素)</h2><ul>
+<li>html中标记就是指标签</li>
+<li>使用标记标签来描述网页</li>
+<li>完整的标签也可以称为元素</li>
+<li>结构：**==标签名 内容 /标签名  标签名/==** <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>内容<span class="tag">&lt;<span class="name">h1</span>/&gt;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="html-属性"><a href="#html-属性" class="headerlink" title="html 属性"></a>html 属性</h2><ul>
+<li>通过属性来设置标签用来处理标签中的内容</li>
+<li>开始标签中添加属性</li>
+<li>需要写在开始标签中，名值对结构</li>
+<li>==属性名=“属性值”==<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">&quot;green&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">font</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="块元素和内联元素"><a href="#块元素和内联元素" class="headerlink" title="块元素和内联元素"></a>块元素和内联元素</h2><ul>
+<li>块元素<ul>
+<li>独占一行的元素、无论内容有多少，都会独占一行</li>
+<li>如： div 、 p 、  h1 <blockquote>
+<p>div 没有任何语义，单纯的块元素，并且不会为它里面的元素设置任何的默认样式，主要用于页面进行布局。</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>内联元素（行内元素）<ul>
+<li>只占自身大小的元素，不会独占一行</li>
+<li>如： span</li>
+</ul>
+</li>
+</ul>
+<h2 id="常用标签"><a href="#常用标签" class="headerlink" title="常用标签"></a>常用标签</h2><h3 id="样式标签"><a href="#样式标签" class="headerlink" title="样式标签"></a>样式标签</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--标题标签--&gt;</span></span><br><span class="line"><span class="comment">&lt;!--- 页面只能写以一个 h1--&gt;</span></span><br><span class="line"><span class="comment">&lt;!--- h3以后的基本不使用--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h6</span>&gt;</span><span class="tag">&lt;/<span class="name">h6</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--段落标签--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">P</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--换行标签--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--水平标签--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hr</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="图像标签"><a href="#图像标签" class="headerlink" title="图像标签"></a>图像标签</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--图片标签--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;图片位置&quot;</span>  <span class="attr">alt</span>=<span class="string">&quot;对图片的描述&quot;</span> <span class="attr">width</span>=<span class="string">&quot;宽度&quot;</span> <span class="attr">height</span>=<span class="string">&quot;高度&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="超链接标签"><a href="#超链接标签" class="headerlink" title="超链接标签"></a>超链接标签</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--超链接标签--&gt;</span></span><br><span class="line"><span class="comment">&lt;!--- 可以从一个页面跳转到另一个页面--&gt;</span></span><br><span class="line"><span class="comment">&lt;!--- 属性：--&gt;</span></span><br><span class="line"><span class="comment">&lt;!--  - href：指向链接跳转的目标地址(相对路径或者绝对路径)--&gt;</span></span><br><span class="line"><span class="comment">&lt;!--  - target：指定打开链接的位置--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;www.繁星2018.top&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span>&gt;</span>繁星博客<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;mailto:a13283072107@163.com&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span>&gt;</span>邮件地址<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"> <span class="tag">&lt;<span class="name">dl</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">dt</span>&gt;</span>第一项<span class="tag">&lt;/<span class="name">dt</span>&gt;</span><span class="tag">&lt;<span class="name">dd</span>&gt;</span>第一项的描述<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">dt</span>&gt;</span>第二项<span class="tag">&lt;/<span class="name">dt</span>&gt;</span><span class="tag">&lt;<span class="name">dd</span>&gt;</span>第二项的描述<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dl</span>&gt;</span> </span><br></pre></td></tr></table></figure>
+<h3 id="表单"><a href="#表单" class="headerlink" title="表单"></a>表单</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">&quot;#&quot;</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- metthod=&quot;get&quot;将提交信息显示到地址栏  &quot;post&quot;隐式提交</span></span><br><span class="line"><span class="comment">  name=&quot;定义表单名称&quot; 供后台调用</span></span><br><span class="line"><span class="comment">  enctype=&quot;application/x-www-form-urencoded&quot;默认&quot;multipart/form-data&quot;--&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="内联框架"><a href="#内联框架" class="headerlink" title="内联框架"></a>内联框架</h2><ul>
+<li>使用内联框架可以引入一个外部的页面</li>
+<li>使用 iframe 来创建一个内联框架</li>
+<li>属性：<ul>
+<li>==src==： 指向一个外部页面的路径，可以使用相对路径</li>
+<li>在现实开发中不推荐使用内联框架，因为内联框架中的内容不会被搜索引擎检索</li>
+</ul>
+</li>
+</ul>
+<h2 id="语义化标签"><a href="#语义化标签" class="headerlink" title="语义化标签"></a>语义化标签</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://dev.opera.com/blog/presentation-html5-and-accessibility-sitting-in-a-tree-4/idlist-url.htm">https://dev.opera.com/blog/presentation-html5-and-accessibility-sitting-in-a-tree-4/idlist-url.htm</a></li>
+<li><a target="_blank" rel="noopener" href="https://dev.opera.com/blog/presentation-html5-and-accessibility-sitting-in-a-tree-4/classlist-url.htm">https://dev.opera.com/blog/presentation-html5-and-accessibility-sitting-in-a-tree-4/classlist-url.htm</a><blockquote>
+<p>在HTML 5出来之前，我们用div来表示页面头部，章节，页脚等。但是这些div都没有实际意义。<br>各大浏览器厂商分析了上百万的页面，从中发现了DIV名称的通用id名称大量重复。例如，很多开发人员喜欢使用</p>
+<figure class="highlight plaintext"><figcaption><span>id</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">``` html</span><br><span class="line">    &lt;hgroup&gt;&lt;/hgroup&gt;</span><br><span class="line">	&lt;header&gt;&lt;/header&gt;</span><br><span class="line">	&lt;nav&gt;&lt;/nav&gt;</span><br><span class="line">	&lt;section&gt;&lt;/section&gt;</span><br><span class="line">	&lt;footer&gt;&lt;/footer&gt;</span><br><span class="line">	&lt;article&gt;&lt;/article&gt;</span><br><span class="line">	&lt;aside&gt;&lt;/aside&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<h3 id="语义化的好处"><a href="#语义化的好处" class="headerlink" title="语义化的好处"></a>语义化的好处</h3></li>
+<li>一组新的片段类元素，和div 一样，除了不会让文本另起一行,可以让更多语义化结构化的代码标签代替大量的无意义的div标签</li>
+<li>提升了网页的质量和语义,对搜索引擎更加友好</li>
+<li>他们这些标签功能就是代替<div>功能中的一部分，他们没有任何的默认样式，除了会让文本另起一行外；<a target="_blank" rel="noopener" href="https://gsnedders.html5.org/outliner/">https://gsnedders.html5.org/outliner/</a></li>
+</ul>
+<h3 id="hgroup元素"><a href="#hgroup元素" class="headerlink" title="hgroup元素"></a>hgroup元素</h3><blockquote>
+<p>代表 网页 或 section 的标题，当元素有多个层级时，该元素可以将h1到h6元素放在其内，譬如文章的主标题和副标题的组合</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;hgroup&gt;</span><br><span class="line">    &lt;h1&gt;HTML 5&lt;/h1&gt;</span><br><span class="line">    &lt;h2&gt;这是一篇介绍HTML 5语义化标签和更简洁的结构&lt;/h2&gt;</span><br><span class="line">&lt;/hgroup&gt;</span><br><span class="line">hgroup使用注意：</span><br><span class="line">	如果只需要一个h1-h6标签就不用hgroup</span><br><span class="line">	如果有连续多个h1-h6标签就用hgroup</span><br><span class="line">	如果有连续多个标题和其他文章数据，h1-h6标签就用hgroup包住，和其他文章元数据一起放入header标签</span><br></pre></td></tr></table></figure>
+<h3 id="header-元素"><a href="#header-元素" class="headerlink" title="header 元素"></a>header 元素</h3><blockquote>
+<p>代表 网页 或 section 的页眉。通常包含h1-h6元素或hgroup</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;header&gt;</span><br><span class="line">    &lt;hgroup&gt;</span><br><span class="line">        &lt;h1&gt;网站标题&lt;/h1&gt;</span><br><span class="line">        &lt;h2&gt;网站副标题&lt;/h2&gt;</span><br><span class="line">    &lt;/hgroup&gt;</span><br><span class="line">&lt;/header&gt;</span><br><span class="line"></span><br><span class="line">header使用注意：</span><br><span class="line">	可以是“网页”或任意“section”的头部部分</span><br><span class="line">	没有个数限制。</span><br><span class="line">	如果hgroup或h1-h6自己就能工作的很好，那就不要用header。</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="nav元素"><a href="#nav元素" class="headerlink" title="nav元素"></a>nav元素</h3><blockquote>
+<p>代表页面的导航链接区域。用于定义页面的主要导航部分。</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;nav&gt;</span><br><span class="line">    &lt;ul&gt;</span><br><span class="line">        &lt;li&gt;HTML 5&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;CSS3&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;JavaScript&lt;/li&gt;</span><br><span class="line">    &lt;/ul&gt;</span><br><span class="line">&lt;/nav&gt;		</span><br><span class="line">nav使用注意：</span><br><span class="line">	用在整个页面主要导航部分上，不合适就不要用nav元素；</span><br></pre></td></tr></table></figure>
+<h3 id="section元素"><a href="#section元素" class="headerlink" title="section元素"></a>section元素</h3><blockquote>
+<p>代表文档中的 节 或 段，段可以是指一篇文章里按照主题的分段；节可以是指一个页面里的分组。</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">		&lt;section&gt;</span><br><span class="line">		    &lt;h1&gt;section是啥？&lt;/h1&gt;</span><br><span class="line">		    &lt;article&gt;</span><br><span class="line">		        &lt;h2&gt;关于section&lt;/h1&gt;</span><br><span class="line">		        &lt;p&gt;section的介绍&lt;/p&gt;</span><br><span class="line">		        &lt;section&gt;</span><br><span class="line">		            &lt;h3&gt;关于其他&lt;/h3&gt;</span><br><span class="line">		            &lt;p&gt;关于其他section的介绍&lt;/p&gt;</span><br><span class="line">		        &lt;/section&gt;</span><br><span class="line">		    &lt;/article&gt;</span><br><span class="line">		&lt;/section&gt;</span><br><span class="line">		</span><br><span class="line">		section使用注意：</span><br><span class="line">			section不是一般意义上的容器元素，如果想作为样式展示和脚本的便利，可以用div。</span><br><span class="line">			article、nav、aside可以理解为特殊的section，</span><br><span class="line">			所以如果可以用article、nav、aside就不要用section，没实际意义的就用div		</span><br><span class="line">```		</span><br><span class="line">		</span><br><span class="line">### article元素</span><br><span class="line">&gt; 最容易跟section和div容易混淆，其实article代表一个在文档，页面或者网站中自成一体的内容</span><br></pre></td></tr></table></figure>
+<pre><code>    &lt;article&gt;
+        &lt;h1&gt;一篇文章&lt;/h1&gt;
+        &lt;p&gt;文章内容..&lt;/p&gt;
+        &lt;footer&gt;
+            &lt;p&gt;&lt;small&gt;版权：html5jscss网所属，作者：damu&lt;/small&gt;&lt;/p&gt;
+        &lt;/footer&gt;
+    &lt;/article&gt;
+    
+    article使用注意：
+        独立文章：用article
+        单独的模块：用section
+        没有语义的：用div
+</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">		</span><br><span class="line">### aside元素</span><br><span class="line">&gt; 被包含在article元素中作为主要内容的附属信息部分，其中的内容可以是与当前文章有关的相关资料、标签、名次解释等</span><br><span class="line">&gt; 在article元素之外使用作为页面或站点全局的附属信息部分。最典型的是侧边栏，其中的内容可以是日志串连，其他组的导航，甚至广告，这些内容相关的页面。</span><br><span class="line">```		</span><br><span class="line">		&lt;article&gt;</span><br><span class="line">		    &lt;p&gt;内容&lt;/p&gt;</span><br><span class="line">		    &lt;aside&gt;</span><br><span class="line">		        &lt;h1&gt;作者简介&lt;/h1&gt;</span><br><span class="line">		        &lt;p&gt;小北，前端一枚&lt;/p&gt;</span><br><span class="line">		    &lt;/aside&gt;</span><br><span class="line">		&lt;/article&gt;</span><br><span class="line">		</span><br><span class="line">		aside使用总结：</span><br><span class="line">			aside在article内表示主要内容的附属信息，</span><br><span class="line">			在article之外则可做侧边栏</span><br><span class="line">			如果是广告，其他日志链接或者其他分类导航也可以用</span><br></pre></td></tr></table></figure>
+<h3 id="footer元素"><a href="#footer元素" class="headerlink" title="footer元素"></a>footer元素</h3><blockquote>
+<p>代表 网页 或 section 的页脚，通常含有该节的一些基本信息，譬如：作者，相关文档链接，版权资料。</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;footer&gt;</span><br><span class="line">    COPYRIGHT@damu</span><br><span class="line">&lt;/footer&gt;</span><br><span class="line"></span><br><span class="line">footer使用注意：</span><br><span class="line">	可以是 网页 或任意 section 的底部部分；</span><br><span class="line">	没有个数限制，除了包裹的内容不一样，其他跟header类似。</span><br></pre></td></tr></table></figure>
+
+<h2 id="音频-amp-视频"><a href="#音频-amp-视频" class="headerlink" title="音频&amp;视频"></a>音频&amp;视频</h2><h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><ul>
+<li>大家都有在网页中浏览视频的经历，但在Html5之前，对视频乃至音频都还没有一个标准,因此在网页中看到的视频，都是通过第三插件的方式嵌入的，可能是QuickTime，也可能是RealPlayer 或者 Flash。浏览器很好的整合了这些插件，你完全意识不到它们的存在,在介绍Html5中的音视频标签前，我们需要了解一些概念<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">attribute</span><br><span class="line">	src</span><br><span class="line">	width</span><br><span class="line">	hieght</span><br><span class="line">	controls</span><br><span class="line">	autoplay</span><br><span class="line">	loop</span><br><span class="line">	muted</span><br><span class="line">	preload</span><br><span class="line">property</span><br><span class="line">	音量和静音属性不回同步，静音属性优先级更高</span><br><span class="line">	load函数：</span><br><span class="line">	重新加载（结合source标签的时候才有用）</span><br></pre></td></tr></table></figure>
+<h3 id="容器"><a href="#容器" class="headerlink" title="容器"></a>容器</h3></li>
+<li>大多数人会认为视频文件就是 .avi .mp4,但事实上 avi和mp4仅仅是容器的格式，它只决定怎么将视频存储起来，而不关系存储的内容。</li>
+<li>不管是音频文件或视频文件，实际上都只是一个容器文件。这点类似于压缩了一组文件的ZIP文件</li>
+<li>视频文件（视频容器）包含了音频轨道、视频轨道和其他一些元数据。</li>
+<li>视频播放的时候，音频轨道和视频轨道是绑定在一起的。</li>
+<li>元数据包含了视频的封面、标题、子标题、字幕等相关信息。</li>
+<li>主流的视频文件格式(容器格式)<br>  MPEG-4:                 通常以.mp4为扩展名<br>  Flash视频:              通常以.flv为扩展名<br>  Ogg:                通常以.ogv为扩展名<br>  WebM:                 通常以.webm为扩展名</li>
+<li>主流的音频文件格式<br>  MPEG-3              .mp3<br>  Acc音频              .acc<br>  Ogg音频                .ogg</li>
+<li>音频视频交错: 通常以.avi为扩展名</li>
+</ul>
+<h3 id="编解码器"><a href="#编解码器" class="headerlink" title="编解码器"></a>编解码器</h3><pre><code>    音频和视频编码/解码是一组算法，用来对一段特定音频或视频进行解码和编码，以便
+    音频和视频能够播放。原始的媒体文件体积非常巨大，如果不对其进行编码，那么数据量是
+    非常惊人的，在互联网上传播则要耗费无法忍受的时间；如果不对其进行解码，就无法将编
+    码后的数据重组为原始的媒体数据
+    
+          视频编解码器               音频编解码器             
+            H.264                            AAC
+            VP8                                MPEG-3
+            Ogg Theora                    Ogg Vorbis
+        
+        H.264： 别名 MPEG-4的第十部分,由MPEG研发并于2003年标准化
+                              它的目的支持一切设备，无论是低带宽低cpu，还是高带宽高cpu 或者是两者之间。
+                              要做到这一点，H.264标准被分成不同的几种配置。高配置使用了更多特性，
+                              这会导致在解码过程中更加消耗CPU，但视频文件本身会更小，视频效果也更好 
+                              
+                            苹果iphone手机        基本配置(BaseLine)
+                            正常的电视机支持        基本配置(BaseLine) 和 主配置(Main)两种
+                            正常的电脑支持              基本配置(BaseLine) 和 主配置(Main) 高级配置(high)三种
+                               
+        
+    当然有一些编解码器受专利的保护，有一些则是免费的，例如Ogg的Vorbis音频编解码器。
+    Ogg的Theora视频编解码器也是可以免费使用的。而想使用H.264的话就需要支付相关的费用了
+    
+    现在的视频编解码器会使用各种技巧减少从一帧到另一帧过程中传递的信息数量，它们不会存储每一帧的
+    所有信息，而只是存储两帧之间的差异信息。
+    编码器也分有损和无损，无损视频文件一般太大，在网页中没有优势，所以我们重点研究有损编解码器。
+    有损编解码器中，信息在编码过程中丢失是无法避免的，反复的对视频编码会导致其画面不均匀。
+    
+</code></pre>
+<ol start="3">
+<li>浏览器对于容器和编解码器支持的情况<pre><code> Browser                        MP4(H.264 + AAC)    WebM(VP8 + Vorbis )        Ogg(Theora + Vorbis)
+ Internet Explorer 9                YES                        NO                    NO
+ Firefox 4.0                        NO                        YES                    YES
+ Google Chrome                     YES                        YES                    YES
+ Apple Safari 5                    YES                        NO                    NO
+ Opera 10.6                        NO                        YES                    YES
+ 
+ http://www.html5videoplayer.net/html5video/html5-video-browser-compatibility/
+ 目前还没有一种编解码和容器的组合能应用于所有的浏览器中！！！
+</code></pre>
+</li>
+</ol>
+<h3 id="处理视频的一个流程"><a href="#处理视频的一个流程" class="headerlink" title="处理视频的一个流程"></a>处理视频的一个流程</h3><pre><code>    1.制作一个Ogg容器中使用Theora视频和Vorbis音频的版本
+    2.制作另外一个版本，使用WebM视频容器（VP8 + Vorbis）
+    3.再制作一个版本，使用MP4视频容器，并使用H.264基本配置的视频和ACC低配的音频
+    4.链接上面3个文件到同一个video元素，并向后兼容基于Flash的视频播放器    
+    
+    
+</code></pre>
+<ol start="5">
+<li>格式转化<pre><code> 用 FFmpeg 制作MP4 视频
+     ffmpeg -i test.mp4 -c:v libx264 -s 1280x720 -b:v 1500k -profile:v high -level 3.1 -c:a aac -ac 2 -b:a 160k -movflags faststart OUTPUT.mp4
+ 
+ 用 FFmpeg 制作 WebM 视频
+     ffmpeg -i test.mp4 -c:v libvpx -s 1280x720 -b:v 1500k -c:a libvorbis -ac 2 -b:a 160k OUTPUT.webm
+ 
+ FFmpeg 制作 Ogg 视频
+     ffmpeg -i test.mp4 -c:v libtheora -s 1280x720 -b:v 1500k -c:a libvorbis -ac 2 -b:a 160k OUTPUT.ogv
+ 
+ FFmpeg 制作Mp3音频
+     ffmpeg -i test.mp3 -c:a libmp3lame -ac 2 -b:a 160k OUTPUT.mp3
+     
+ FFmpeg 制作Ogg音频
+     ffmpeg -i test.mp3 -c:a libvorbis -ac 2 -b:a 160k OUTPUT.ogg
+ 
+ FFmpeg 制作ACC音频    
+     ffmpeg -i test.mp3 -c:a aac -ac 2 -b:a 160k OUTPUT.aac
+     
+</code></pre>
+</li>
+</ol>
+<h2 id="canvas（画布）"><a href="#canvas（画布）" class="headerlink" title="canvas（画布）"></a>canvas（画布）</h2><ul>
+<li>HTML5 新增的元素 ==canvas==，通过使用 JavaScript 中的脚本来绘制图形，创建动画，最早有 Apple 引入 webkit </li>
+<li>建议成对出现，不要使用闭合的形式</li>
+<li>替换内容：定义一些替换内容</li>
+<li>属性：<ul>
+<li>只有两个属性width height</li>
+<li>默认 宽 300px 高150px</li>
+</ul>
+</li>
+<li>改元素只是创造一个固定大小的画布，要想绘制内容，还需要找到它的渲染上下文<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--getContext() 获得渲染上下文和它的绘画功能，只有一个参数，上下文的格式--&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--获取方式--&gt;</span></span><br><span class="line">    var canvas = document。getElementById(&#x27;box&#x27;);</span><br><span class="line">    var ctr = canvas.getContext(&#x27;2d&#x27;);</span><br><span class="line">    <span class="comment">&lt;!--检查支持性--&gt;</span></span><br><span class="line">    var canvas = documnet.getElementById(&#x27;tutorial&#x27;);</span><br><span class="line">    if(canvas.getCotext)&#123;</span><br><span class="line">        var ctr = canvas.getContext(&#x27;2d&#x27;);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></li>
+<li><strong>绘制矩形</strong><ul>
+<li>在HTML中元素 canvas 只支持一种原生的图形绘制：矩形，其他图形绘制至少需要生成一条路径</li>
+<li>绘制矩形：三种方式<ul>
+<li>绘制一个填充的矩形（填充色默认黑色）<br>==fielRect(x,y,width,height)==</li>
+<li>绘制一个矩形的边框（默认边框：一像素实心黑色） ==strokeRect(x,y,width,height)==</li>
+<li>清除只是指定矩形区域，让清除部分完全透明 ==clearRect(x,y,width,height)==</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>strokRect,边框像素渲染问题</strong><ul>
+<li>边框宽度是平均的偏移在位置的两侧</li>
+<li>contex.strokRect(10,10,50,50)</li>
+<li>边框渲染在10.5 和 9.5 之间，浏览器不会让像素只用自己的一半</li>
+<li>相当于边框会渲染在9 和 11 之间</li>
+</ul>
+</li>
+<li><strong>添加样式和颜色</strong><ul>
+<li>==fillStyle==: 设置图形的填充颜色</li>
+<li>==strokStyle==: 设置图形轮廓的颜色（默认黑色）</li>
+<li>==lineWidth==：设置当前绘线的粗细，属性值为正数，0、负数、infinity、NaN都被忽略，默认值1.0</li>
+</ul>
+</li>
+<li><strong>lineJoin</strong><ul>
+<li>设定线条与线条之间结合处的样式（默认miter）</li>
+<li>==round== 圆角</li>
+<li>==bevel== 斜角</li>
+<li>miter 直角</li>
+</ul>
+</li>
+<li><strong>绘制路径</strong><ul>
+<li>图形的基本元素就是路径，通过不同颜色和宽度的线段或曲线相连形成的不同形状的点的集合</li>
+<li>步骤：<ul>
+<li>创建路径起始点</li>
+<li>使用图画命令去画出路径</li>
+<li>把路径封闭</li>
+<li>通过描边或填充路径区域来渲染图形</li>
+</ul>
+</li>
+<li><strong>绘制三角形</strong><ul>
+<li>==beginPath()== 新建一条路径，生成之后，图形绘制命令被指向到路径上准备生成路径，清空路径容器</li>
+<li>==moveTo(x,y)== 设置起点</li>
+<li>==lineTo(x,y)== 绘制一条当前位置到指定x 和 y 位置的直线</li>
+<li>==closePath()== 闭合路径之后图形绘制命令又重新指向到上下文中</li>
+<li>==stroke()== 通过线条来绘制图形轮廓</li>
+<li>==fill(==)   通过填充路径的内容区域生成实心的图形，自动调用 closePath()</li>
+</ul>
+</li>
+<li><strong>绘制矩形</strong><ul>
+<li>==rect(x,y,width,height)==</li>
+<li>绘制一个左上角坐标为（x,y），宽为width 和 height 的矩形</li>
+<li>在该方法执行时，moveTo() 自动设置坐标(0,0),笔触自动回到默认坐标</li>
+</ul>
+</li>
+<li><strong>lineCap</strong><ul>
+<li>指定如何绘制每一条线段末端的属性</li>
+<li>==butt== ：方形结束</li>
+<li>==round==：圆形结束</li>
+<li>==square==：方形结束，但增加了一个宽度和线段相同，高度是线段厚度一半的矩形区域</li>
+</ul>
+</li>
+<li><strong>save</strong><ul>
+<li>将当前状态放入栈中，保存 canvas 全部状态的方法</li>
+<li>属性</li>
+</ul>
+</li>
+<li><strong>restore</strong><ul>
+<li>在绘图状态栈中弹出顶端的状态，将 canvas 恢复到最近的保存状态</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">繁星</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://www.fxblog.top/2020/06/10/html%E5%BC%80%E5%8F%91%E6%80%BB%E7%BB%93/">https://www.fxblog.top/2020/06/10/html开发总结/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://www.fxblog.top" target="_blank">繁星</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/HTML5/">HTML5</a><a class="post-meta__tags" href="/tags/canvas/">canvas</a></div><div class="post_share"><div class="social-share" data-image="/img/bg/bg1.jpeg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2021/06/17/BookStack.exe%20install%E6%97%A0%E6%B3%95%E5%90%AF%E5%8A%A8/"><img class="prev-cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/bg/bg3.jpeg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">BookStack.exe Install无法启动</div></div></a></div><div class="next-post pull-right"><a href="/2019/07/27/cmd%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%80%BB%E7%BB%93/"><img class="next-cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/bg/bg2.jpeg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Cmd命令总结</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B"><span class="toc-number">1.</span> <span class="toc-text">简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#html-%E7%9A%84%E5%8F%91%E5%B1%95"><span class="toc-number">2.</span> <span class="toc-text">html 的发展</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#html5-%E7%AE%80%E4%BB%8B"><span class="toc-number">3.</span> <span class="toc-text">html5 简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B7%AF%E5%BE%84"><span class="toc-number">4.</span> <span class="toc-text">路径</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%AD%E6%B3%95%E8%A7%84%E8%8C%83"><span class="toc-number">5.</span> <span class="toc-text">语法规范</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#html-%E5%9F%BA%E6%9C%AC%E6%A1%86%E6%9E%B6"><span class="toc-number">6.</span> <span class="toc-text">html 基本框架</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#DOCTYPE%E5%92%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E6%B8%B2%E6%9F%93%E6%A8%A1%E5%BC%8F"><span class="toc-number">6.1.</span> <span class="toc-text">DOCTYPE和浏览器渲染模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#DTD"><span class="toc-number">6.2.</span> <span class="toc-text">DTD</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%B9%E5%85%83%E7%B4%A0"><span class="toc-number">6.3.</span> <span class="toc-text">根元素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#head%E5%85%83%E7%B4%A0"><span class="toc-number">6.4.</span> <span class="toc-text">head元素</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#html-%E6%A0%87%E7%AD%BE-%E5%85%83%E7%B4%A0"><span class="toc-number">7.</span> <span class="toc-text">html 标签 (元素)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#html-%E5%B1%9E%E6%80%A7"><span class="toc-number">8.</span> <span class="toc-text">html 属性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9D%97%E5%85%83%E7%B4%A0%E5%92%8C%E5%86%85%E8%81%94%E5%85%83%E7%B4%A0"><span class="toc-number">9.</span> <span class="toc-text">块元素和内联元素</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE"><span class="toc-number">10.</span> <span class="toc-text">常用标签</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%B7%E5%BC%8F%E6%A0%87%E7%AD%BE"><span class="toc-number">10.1.</span> <span class="toc-text">样式标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%BE%E5%83%8F%E6%A0%87%E7%AD%BE"><span class="toc-number">10.2.</span> <span class="toc-text">图像标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B6%85%E9%93%BE%E6%8E%A5%E6%A0%87%E7%AD%BE"><span class="toc-number">10.3.</span> <span class="toc-text">超链接标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%97%E8%A1%A8"><span class="toc-number">10.4.</span> <span class="toc-text">列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A1%A8%E5%8D%95"><span class="toc-number">10.5.</span> <span class="toc-text">表单</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%85%E8%81%94%E6%A1%86%E6%9E%B6"><span class="toc-number">11.</span> <span class="toc-text">内联框架</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%AD%E4%B9%89%E5%8C%96%E6%A0%87%E7%AD%BE"><span class="toc-number">12.</span> <span class="toc-text">语义化标签</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%AD%E4%B9%89%E5%8C%96%E7%9A%84%E5%A5%BD%E5%A4%84"><span class="toc-number">12.1.</span> <span class="toc-text">语义化的好处</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#hgroup%E5%85%83%E7%B4%A0"><span class="toc-number">12.2.</span> <span class="toc-text">hgroup元素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#header-%E5%85%83%E7%B4%A0"><span class="toc-number">12.3.</span> <span class="toc-text">header 元素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#nav%E5%85%83%E7%B4%A0"><span class="toc-number">12.4.</span> <span class="toc-text">nav元素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#section%E5%85%83%E7%B4%A0"><span class="toc-number">12.5.</span> <span class="toc-text">section元素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#footer%E5%85%83%E7%B4%A0"><span class="toc-number">12.6.</span> <span class="toc-text">footer元素</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9F%B3%E9%A2%91-amp-%E8%A7%86%E9%A2%91"><span class="toc-number">13.</span> <span class="toc-text">音频&amp;视频</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A6%82%E5%BF%B5"><span class="toc-number">13.1.</span> <span class="toc-text">概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%B9%E5%99%A8"><span class="toc-number">13.2.</span> <span class="toc-text">容器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BC%96%E8%A7%A3%E7%A0%81%E5%99%A8"><span class="toc-number">13.3.</span> <span class="toc-text">编解码器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%84%E7%90%86%E8%A7%86%E9%A2%91%E7%9A%84%E4%B8%80%E4%B8%AA%E6%B5%81%E7%A8%8B"><span class="toc-number">13.4.</span> <span class="toc-text">处理视频的一个流程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#canvas%EF%BC%88%E7%94%BB%E5%B8%83%EF%BC%89"><span class="toc-number">14.</span> <span class="toc-text">canvas（画布）</span></a></li></ol></div></div></div></div></main><footer id="footer" style="background-image: url('/img/bg/bg1.jpeg')"><div id="footer-wrap"><div class="copyright">&copy;2014 - 2021 By 繁星</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="font-plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font-minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/local-search.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"></div><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js" async="async" mobile="false"></script></div></body></html>
